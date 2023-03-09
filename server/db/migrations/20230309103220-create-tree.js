@@ -10,20 +10,20 @@ module.exports = {
       },
       tree: {
         type: Sequelize.STRING,
-        allow_null:false,
+        allowNull: false,
         unique: true
 
       },
       location: {
         type: Sequelize.STRING
       },
-      height_ft: {
+      heightFt: {
         type: Sequelize.FLOAT,
         validate: {
           min: 0
         }
       },
-      ground_circumference_ft: {
+      groundCircumferenceFt: {
         type: Sequelize.FLOAT,
         validate: {
         min: 0
